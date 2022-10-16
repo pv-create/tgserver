@@ -18,7 +18,8 @@ bot.on('message', async (msg) => {
         await bot.sendMessage(chatId, 'Ниже появится кнопка, заполни форму', {
             reply_markup: {
                 keyboard: [
-                    [{text: 'Заполнить форму', web_app: {url: 'https://marvelous-cactus-25dd34.netlify.app/form'}}]
+                    [{text: 'Доступ к номеру телефона',request_contact: true}],
+                    [{text: 'Доступ к вашей геолокации',request_location: true}]
                 ]
             }
         })
