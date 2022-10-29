@@ -24,10 +24,10 @@ bot.on('message', async (msg) => {
             }
         })
 
-        await bot.sendMessage(chatId, 'Заходи в наш интернет магазин по кнопке ниже', {
+        await bot.sendMessage(chatId, 'Заполни форму по кнопке ниже', {
             reply_markup: {
                 inline_keyboard: [
-                    [{text: 'Сделать заказ', web_app: {url: webAppUrl}}]
+                    [{text: 'Заполнить форму', web_app: {url: webAppUrl}}]
                 ]
             }
         })
